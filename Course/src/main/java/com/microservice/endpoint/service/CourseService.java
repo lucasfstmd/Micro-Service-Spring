@@ -2,11 +2,11 @@ package com.microservice.endpoint.service;
 
 import java.util.List;
 
-import com.microservice.endpoint.model.Course;
-import com.microservice.endpoint.repository.CourseRepository;
+
+import com.microservice.core.repository.CourseRepository;
+import com.microservice.core.model.Course;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 
@@ -19,6 +19,6 @@ public class CourseService {
 
     public List<Course> list(){
         log.info("Listing all cousers");
-        return couserRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
+        return couserRepository.findAll();
     }
 }
