@@ -13,9 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spirng</name>
 	<description>Spirng</description>
-	<properties>
-		<java.version>17</java.version>
-	</properties>
+
 	<dependencies>
 	</dependencies>
 
