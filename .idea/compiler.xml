@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Course" />
         <module name="core" />
+        <module name="getway" />
+        <module name="Course" />
+        <module name="discovery" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +21,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Course" options="-parameters" />
       <module name="core" options="-parameters" />
+      <module name="discovery" options="-parameters" />
+      <module name="getway" options="-parameters" />
     </option>
   </component>
 </project>
