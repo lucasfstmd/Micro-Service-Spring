@@ -22,7 +22,7 @@ public class CourseController {
         this.courseService = courseService;
     }
 
-    @GetMapping
+    @GetMapping("/course")
     public ResponseEntity<List<Course>> list(){
         return new ResponseEntity<>(courseService.list(), HttpStatus.OK);
     }
