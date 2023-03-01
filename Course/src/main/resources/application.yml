@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 
 eureka:
   instance:
@@ -11,6 +11,8 @@ eureka:
     register-with-eureka: true
 
 spring:
+  application:
+    name: course
   profiles:
     active: development
   security:
