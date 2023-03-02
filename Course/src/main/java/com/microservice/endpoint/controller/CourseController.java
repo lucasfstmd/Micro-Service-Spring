@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("v1/admin/course")
+@RequestMapping
 @Slf4j
 public class CourseController {
 
@@ -20,7 +20,7 @@ public class CourseController {
         this.courseService = courseService;
     }
 
-    @GetMapping
+    @GetMapping("/course")
     public ResponseEntity<List<Course>> list(){
         return new ResponseEntity<>(courseService.list(), HttpStatus.OK);
     }
