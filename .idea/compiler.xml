@@ -10,6 +10,7 @@
         <module name="core" />
         <module name="getway" />
         <module name="Course" />
+        <module name="auth" />
         <module name="discovery" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Course" options="-parameters" />
+      <module name="auth" options="-parameters" />
       <module name="core" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="getway" options="-parameters" />

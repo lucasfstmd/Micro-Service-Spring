@@ -13,6 +13,8 @@ public class GetewayConfig {
         return builder.routes()
                 .route("course", courseRouter -> courseRouter.path("/course")
                         .uri("http://localhost:8082/course"))
+                .route("auth", authRouter -> authRouter.path("/login")
+                        .uri("http://localhost:8083/login"))
                 .build();
     }
 }
