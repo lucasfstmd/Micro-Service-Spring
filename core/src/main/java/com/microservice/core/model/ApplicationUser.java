@@ -1,5 +1,7 @@
 package com.microservice.core.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -7,10 +9,12 @@ import lombok.*;
 @Entity
 @Getter
 @Setter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApplicationUser implements AbstractEntity {
 
     @Id
@@ -25,6 +29,7 @@ public class ApplicationUser implements AbstractEntity {
     private String password;
 
     @Column(nullable = false)
+    @Builder.Default
     private String role = "USER";
 
     public ApplicationUser(@NotNull ApplicationUser applicationUser) {
@@ -33,4 +38,5 @@ public class ApplicationUser implements AbstractEntity {
         this.password = applicationUser.getPassword();
         this.role = applicationUser.getRole();
     }
+
 }

@@ -17,3 +17,12 @@ spring:
     name: gateway
   main:
     web-application-type: reactive
+
+jwt:
+  config:
+    login-url: /auth/login
+    type: signed
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

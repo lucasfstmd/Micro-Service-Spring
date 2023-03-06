@@ -7,7 +7,6 @@ eureka:
   client:
     service-url:
       defautZone:  http://localhost:8761/eureka/
-    fetch-registry: true
     register-with-eureka: true
 
 spring:
@@ -41,5 +40,6 @@ logging:
     level:
       org.springframework: info
       org.hibernate: debug
-
-
+jwt:
+  config:
+    type: signed

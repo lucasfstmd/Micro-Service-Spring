@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
         <module name="getway" />
+        <module name="Token" />
         <module name="Course" />
         <module name="auth" />
         <module name="discovery" />
@@ -16,15 +17,18 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Micro-Service-SpringBoot" target="17" />
+      <module name="token" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Course" options="-parameters" />
+      <module name="Token" options="-parameters" />
       <module name="auth" options="-parameters" />
       <module name="core" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="getway" options="-parameters" />
+      <module name="token" options="-parameters" />
     </option>
   </component>
 </project>
